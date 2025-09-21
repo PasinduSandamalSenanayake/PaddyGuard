@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:paddyguard/screen/Guide/guide_screen_1.dart';
 import 'package:paddyguard/screen/Guide/guide_screen_2.dart';
+import 'package:paddyguard/screen/Home/bottom_nav_bar.dart';
 import 'package:paddyguard/screen/authenticate/login_screen.dart';
 import 'package:paddyguard/screen/authenticate/register_screen.dart';
 
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: RegisterScreen(),
+      home: BottomNavBar(),
     );
   }
 }
