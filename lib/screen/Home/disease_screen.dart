@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:paddyguard/screen/disease/bacterial_leaf_screen.dart';
+import 'package:paddyguard/screen/disease/leaf_blast_screen.dart';
+import 'package:paddyguard/screen/disease/leaf_scald_screen.dart';
 
 class DiseaseScreen extends StatefulWidget {
   const DiseaseScreen({super.key});
@@ -111,9 +114,7 @@ class _DiseaseScreenState extends State<DiseaseScreen> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const DiseaseDetailsScreen(
-                        diseaseName: "Leaf Blast",
-                      ),
+                      builder: (context) => const LeafBlastScreen(),
                     ),
                   );
                 },
@@ -127,9 +128,7 @@ class _DiseaseScreenState extends State<DiseaseScreen> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const DiseaseDetailsScreen(
-                        diseaseName: "Leaf Scald",
-                      ),
+                      builder: (context) => const LeafScaldScreen(),
                     ),
                   );
                 },
@@ -143,9 +142,7 @@ class _DiseaseScreenState extends State<DiseaseScreen> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const DiseaseDetailsScreen(
-                        diseaseName: "Bacterial Leaf Blight",
-                      ),
+                      builder: (context) => const BacterialLeafScreen(),
                     ),
                   );
                 },
