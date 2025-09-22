@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:paddyguard/screen/Home/camera_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -51,7 +52,14 @@ class _HomeScreenState extends State<HomeScreen> {
                                 borderRadius: BorderRadius.circular(8),
                               ),
                             ),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const CameraScreen(),
+                                ),
+                              );
+                            },
                             child: const Text("Catch the Disease"),
                           ),
                         ],
